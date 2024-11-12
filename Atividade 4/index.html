@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contador</title>
+  </head>
+  <body>
+    <p id="contador">0</p>
+    <button onclick="incrementar()">Incrementar</button>
+
+    <script>
+      let contagem = 0;
+      function incrementar() {
+        contagem++;
+        document.getElementById("contador").innerText = contagem;
+      }
+    </script>
+  </body>
+</html>

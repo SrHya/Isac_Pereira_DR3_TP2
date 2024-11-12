@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exibição de Imagem</title>
+  </head>
+  <body onload="mostrarImagem()">
+    <p id="mensagem">Imagem carregando...</p>
+    <img id="imagem" src="imagem.jpg" style="display: none" />
+
+    <script>
+      function mostrarImagem() {
+        document.getElementById("imagem").style.display = "block";
+        document.getElementById("mensagem").innerText = "Imagem carregada";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acordeão</title>
+    <style>
+      /* Estilo básico do acordeão */
+      .accordion-item {
+        cursor: pointer;
+        background-color: #f1f1f1;
+        margin: 5px 0;
+        padding: 15px;
+        border: 1px solid #ccc;
+        transition: background-color 0.3s;
+      }
+
+      .accordion-item:hover {
+        background-color: #e1e1e1;
+      }
+
+      /* Ocultar conteúdo inicialmente */
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion-item">
+      <h3>Seção 1</h3>
+      <p class="hidden">
+        Conteúdo da seção 1. Este é o conteúdo que será mostrado ao clicar na
+        seção.
+      </p>
+    </div>
+
+    <div class="accordion-item">
+      <h3>Seção 2</h3>
+      <p class="hidden">
+        Conteúdo da seção 2. Este é o conteúdo que será mostrado ao clicar na
+        seção.
+      </p>
+    </div>
+
+    <div class="accordion-item">
+      <h3>Seção 3</h3>
+      <p class="hidden">
+        Conteúdo da seção 3. Este é o conteúdo que será mostrado ao clicar na
+        seção.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Texto com Atraso</title>
+  </head>
+  <body onload="exibirTextoComAtraso()">
+    <p id="texto" style="display: none">Texto exibido após 5 segundos</p>
+
+    <script>
+      function exibirTextoComAtraso() {
+        setTimeout(() => {
+          document.getElementById("texto").style.display = "block";
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

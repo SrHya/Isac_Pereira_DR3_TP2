@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão com Múltiplos Eventos</title>
+    <style>
+      #multiEventButton {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="multiEventButton">Clique ou Clique Duplo</button>
+    <p id="message"></p>
+    <script>
+      const button = document.getElementById("multiEventButton");
+      const message = document.getElementById("message");
+
+      button.addEventListener("click", function () {
+        message.textContent = "Clique simples detectado!";
+      });
+
+      button.addEventListener("dblclick", function () {
+        button.style.backgroundColor = "lightblue";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modificação de Estilo</title>
+    <style>
+      #quadrado {
+        width: 100px;
+        height: 100px;
+        background-color: #f00;
+        margin: 20px auto;
+        cursor: pointer;
+        border: solid 3px #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quadrado"></div>
+    <button onclick="modificarEstilo()">Mudar Estilo</button>
+
+    <script>
+      function modificarEstilo() {
+        const quadrado = document.getElementById("quadrado");
+        quadrado.style.backgroundColor = "#00F";
+        quadrado.style.border = "solid 5px #0F0";
+      }
+    </script>
+  </body>
+</html>

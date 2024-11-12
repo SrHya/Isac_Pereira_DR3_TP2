@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transformação com Mouse Over</title>
+    <style>
+      #quadrado {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 20px auto;
+        position: relative;
+        z-index: 1;
+        transition: opacity 0.5s;
+      }
+      #imagem {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url("imagem.jpg") no-repeat center;
+        opacity: 0;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="imagem"></div>
+    <div
+      id="quadrado"
+      onmouseover="transformar(true)"
+      onmouseout="transformar(false)"
+    ></div>
+
+    <script>
+      function transformar(mostrar) {
+        const quadrado = document.getElementById("quadrado");
+        const imagem = document.getElementById("imagem");
+        quadrado.style.opacity = mostrar ? "0.5" : "1";
+        imagem.style.opacity = mostrar ? "1" : "0";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionando Itens</title>
+  </head>
+  <body>
+    <ul id="lista"></ul>
+    <script>
+      const button = document.createElement("button");
+      button.textContent = "Inserir";
+      button.addEventListener("click", function () {
+        const li = document.createElement("li");
+        li.textContent = "Nova entrada";
+        document.getElementById("lista").appendChild(li);
+      });
+      document.body.appendChild(button);
+    </script>
+  </body>
+</html>
